@@ -1,0 +1,58 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+    
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+}
+
+.logo-img {
+    width: 70px;
+    height: 70px;
+}
+
+header a.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header .logo span:first-child {
+    color: rgb(122, 123, 209);
+}
+
+header .logo span:last-child {
+    color: #fff;
+}
+
+.text{
+    background-color: #fff;
+    width: 60px;
+    text-align: center;
+    border-radius: 10%;
+    
+}
+
+
+
+
+
+
+
+
