@@ -13,7 +13,7 @@
                         <img [src]="row.image" (click)="gotoDetails(row)"  class="img-fluid" alt="">
                         <div class="body mt-1">
                             <h5 class="title text-white">{{row.symbol | uppercase}} <span class="text-info ms-1">{{row.market_cap_change_percentage_24h}}%</span></h5>
-                            <p class="price text-white">{{row.current_price | currency:"INR"}}</p>
+                            <p class="price text-white">{{row.current_price | currency:currency}}</p>
                         </div>
                     </div>
                 </div>
@@ -48,7 +48,7 @@
             <!-- Progress Column -->
             <ng-container matColumnDef="current_price">
                 <th mat-header-cell *matHeaderCellDef mat-sort-header> Price </th>
-                <td mat-cell *matCellDef="let row"> {{row.current_price | currency:'INR'}} </td>
+                <td mat-cell *matCellDef="let row"> {{row.current_price | currency:currency}} </td>
             </ng-container>
 
             <!-- Name Column -->
@@ -60,7 +60,7 @@
             <!-- Fruit Column -->
             <ng-container matColumnDef="market_cap">
                 <th mat-header-cell *matHeaderCellDef mat-sort-header> Market Cap </th>
-                <td mat-cell *matCellDef="let row"> {{row.market_cap | currency : 'INR'}} </td>
+                <td mat-cell *matCellDef="let row"> {{row.market_cap | currency : currency}} </td>
             </ng-container>
 
             <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
@@ -75,3 +75,4 @@
         <mat-paginator class="page" [pageSizeOptions]="[10, 25, 50, 100]" aria-label="Select page of users"></mat-paginator>
     </div>
 </div>
+<br><br><br><br>
